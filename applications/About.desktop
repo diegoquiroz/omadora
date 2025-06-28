@@ -5,7 +5,7 @@ Comment=System information from Fastfetch
 Exec=alacritty --class=About --title=About -e bash -c 'fastfetch; read -n 1 -s'
 Terminal=false
 Type=Application
-Icon=Arch
+Icon=computer
 Categories=GTK;
 StartupNotify=false
 

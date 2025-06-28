@@ -1,5 +1,8 @@
 if ! command -v nvim &>/dev/null; then
-  yay -S --noconfirm --needed nvim luarocks tree-sitter-cli
+  sudo dnf install -y neovim luarocks nodejs npm
+
+  # Install tree-sitter-cli via npm
+  sudo npm install -g tree-sitter-cli
 
   # Install LazyVim
   rm -rf ~/.config/nvim

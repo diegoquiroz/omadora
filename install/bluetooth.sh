@@ -2,4 +2,4 @@
 sudo systemctl enable --now bluetooth.service
 
 # Install bluetooth controls
-yay -S --noconfirm --needed blueberry
+sudo dnf install -y blueberry bluez bluez-tools
