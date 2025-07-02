@@ -1,17 +1,11 @@
 # Install desktop applications and utilities
-sudo dnf install -y \
-  brightnessctl playerctl pamixer pavucontrol wireplumber \
-  fcitx5 fcitx5-gtk fcitx5-qt fcitx5-configtool \
-  nautilus sushi gnome-calculator \
-  chromium vlc \
-  evince imv
+sudo dnf install -y brightnessctl playerctl pamixer pavucontrol wireplumber
+sudo dnf install -y nautilus sushi gnome-calculator chromium vlc evince
+sudo dnf install -y fcitx5 fcitx5-gtk fcitx5-qt fcitx5-configtool || true
+sudo dnf install -y imv wl-clipboard || true
 
 # Install applications via Flatpak
-flatpak install -y flathub \
-  com.onepassword.OnePassword \
-  org.signal.Signal
+flatpak install -y flathub com.onepassword.OnePassword org.signal.Signal || true
 
-# Install additional tools that might not be in main repos
-sudo dnf install -y \
-  wl-clipboard \
-  clipse || echo "clipse not available, skipping"
+# Install additional tools
+sudo dnf install -y clipse || true

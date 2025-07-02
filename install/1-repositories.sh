@@ -9,5 +9,5 @@ sudo dnf install -y \
 # Enable Flathub for additional applications
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-# Install additional useful repositories
-sudo dnf copr enable -y solopasha/hyprland  # For latest Hyprland packages
+# Enable Hyprland COPR repository
+sudo dnf copr enable -y solopasha/hyprland
